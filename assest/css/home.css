@@ -40,18 +40,23 @@
     padding: 5px;
 }
 .header-icons i:hover{
-    color: aquamarine;
+
+
+    color: rgb(223, 116, 23);
     cursor: pointer;
 }
 
 
 .title {
     /* background-color: rgba(211, 211, 211, 0.5); */
-    color: rgb(12, 208, 143);
+    color: rgb(48, 27, 166);
     padding: 5px;
     text-align: center;
     /* margin-top: 50px; */
     /* border: 1px solid black; */
+
+
+    
 
 }
 
