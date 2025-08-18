@@ -1,4 +1,4 @@
-.header {
+ .header {
     background-image: url("../img/movie2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,10 +16,11 @@
     margin-inline: 30px;
     font-size: 32px;
     text-decoration: none;
+    padding: var(--padding);
 }
 
 .navbar a:hover{
-    color: aquamarine ;
+    color: var(--main) ;
 }
 
 .header-icons{
@@ -34,22 +35,29 @@
     border-radius: 50%;
     color: black;
     border: 2px solid black;
-    font-size: 32px;
+    font-size: 24px;
     margin-inline: 20px;
-    background-color: aliceblue;
+    background-color: var(--light);
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-icons i:hover{
-
-
-    color: rgb(223, 116, 23);
+    color: var(--main);
     cursor: pointer;
+    border-color: var(--main);
+    border-style: dashed;
+    box-shadow: 9px 20px 50px var(--main);
+    /*background-color: var(--secondary);
+    */transition:all 0.5s ease-in-out;
+
 }
 
 
 .title {
     /* background-color: rgba(211, 211, 211, 0.5); */
-    color: rgb(48, 27, 166);
+    color: var(--main);
     padding: 5px;
     text-align: center;
     /* margin-top: 50px; */
