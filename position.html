@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Examples</title>
+  <style>
+    body {
+      height: 2000px; /* عشان يبين تأثير السكرول */
+    }
+    .container {
+      border: 2px dashed gray;
+      padding: 20px;
+      margin-bottom: 50px;
+      height: 200px;
+      position: relative; /* parent للـ absolute */
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* 1. Static */
+    .static {
+      position: static; /* default */
+      background-color: #8bc34a;
+    }
+
+    /* 2. Relative */
+    .relative {
+      position: relative;
+      top: 20px; /* نزل لتحت */
+      left: 30px; /* راح يمين */
+      background-color: #ff9800;
+    }
+
+    /* 3. Absolute */
+    .absolute {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #03a9f4;
+    }
+
+    /* 4. Fixed */
+    .fixed {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: #e91e63;
+      color: white;
+    }
+
+    /* 5. Sticky */
+    .sticky {
+      position: sticky;
+      top: 0; /* بيلزق بأعلى الصفحة عند السكرول */
+      background-color: #9c27b0;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+  </div>
+    <h2 class="sticky"> Sticky Header (بيلزق لما نعمل سكرول )</h2>
+
+
+      <div class="container">
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <p>سكرول للأسفل لتشوف تأثير <b>sticky</b> و <b>fixed</b>.</p>
+
+  <div class="fixed">Fixed</div>
+
+</body>
+</html>

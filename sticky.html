@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Bottom Example</title>
+  <style>
+    .container {
+      border: 2px dashed gray;
+      height: 400px;        /* ارتفاع كبير */
+      overflow: auto;       /* عشان يظهر scroll داخلها */
+      margin: 50px;
+      padding: 20px;
+      position: relative;
+    }
+
+    .content {
+      height: 800px; /* محتوى طويل */
+      background: linear-gradient(to bottom, lightblue, lightgreen);
+    }
+
+    .sticky-bottom {
+      position: sticky;
+      bottom: 0;  /* يلزق بالأسفل */
+      background-color: #e91e63;
+      color: white;
+      padding: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="content">
+      <p>سكرول جوا الصندوق لتشوف كيف العنصر "Sticky" بضل ملزق بأسفل الصندوق.</p>
+      <p>النص النص النص...</p>
+      <p>النص النص النص...</p>
+      <p>النص النص النص...</p>
+      <p>النص النص النص...</p>
+      <p>النص النص النص...</p>
+      <p>النص النص النص...</p>
+      <p>النص النص النص...</p>
+      <p>النص النص النص...</p>
+    </div>
+    <div class="sticky-bottom"> أنا Sticky بأسفل الصندوق</div>
+  </div>
+
+</body>
+</html>
