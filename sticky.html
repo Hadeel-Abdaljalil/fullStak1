@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sticky Bottom Example</title>
-  <style>
-    .container {
-      border: 2px dashed gray;
-      height: 400px;        /* ارتفاع كبير */
-      overflow: auto;       /* عشان يظهر scroll داخلها */
-      margin: 50px;
-      padding: 20px;
-      position: relative;
-    }
 
-    .content {
-      height: 800px; /* محتوى طويل */
-      background: linear-gradient(to bottom, lightblue, lightgreen);
-    }
 
-    .sticky-bottom {
-      position: sticky;
-      bottom: 0;  /* يلزق بالأسفل */
-      background-color: #e91e63;
-      color: white;
-      padding: 15px;
-      font-weight: bold;
-    }
-  </style>
 </head>
+
+
+
+
 <body>
 
-  <div class="container">
-    <div class="content">
-      <p>سكرول جوا الصندوق لتشوف كيف العنصر "Sticky" بضل ملزق بأسفل الصندوق.</p>
-      <p>النص النص النص...</p>
-      <p>النص النص النص...</p>
-      <p>النص النص النص...</p>
-      <p>النص النص النص...</p>
-      <p>النص النص النص...</p>
-      <p>النص النص النص...</p>
-      <p>النص النص النص...</p>
-      <p>النص النص النص...</p>
-    </div>
-    <div class="sticky-bottom"> أنا Sticky بأسفل الصندوق</div>
+  <h1 id="demo">javaScript </h1>
+
+
+  <div class="position-relative bg-danger border" style="width: 700px; height: 500px; margin-top: 300px; margin-left: 100px;">
+    <div class="position-absolute top-0 start-0 bg-black text-light" style="width: 50px; height: 50px;"> box1</div>
+    <div class="position-absolute top-0 start-100 translate-middle bg-black text-light" style="width: 50px; height: 50px;"> box2</div>
+    <div class="position-absolute  top-50 start-50 bg-black text-light" style="width: 50px; height: 50px;"> box3</div>
+    <div  class="position-absolute bottom-50 end-50 bg-black text-light translate-middle-y" style="width: 50px; height: 50px;"> box4</div>
+    <div class="position-absolute top-50 start-0 translate-middle-x bg-black text-light" style="width: 50px; height: 50px;"> box5</div>
+    <!-- <div class="position-absolute bottom-100 start-0  bg-black text-light" style="width: 50px; height: 50px;"> box5</div> -->
+
+    <div class="position-absolute top-100 start-100 translate-middle bg-black text-light" style="width: 50px; height: 50px;"> box5</div>
+    <div class="position-absolute top-100 start-0 translate-middle bg-black text-light" style="width: 50px; height: 50px;"> box10</div>
+
   </div>
 
+
+
+  <div class="icon-action">
+ <div style="height: 50px; width: 100px; margin: 500px; position: relative;" class="bg-info text-light d-flex justify-content-center align-items-center rounded ">
+   <p style="margin-bottom: 0 ;"> Mails <span class="position-absolute top-0 start-100 translate-middle bg-black border border-0 rounded px-2">+99</span></p>
+  </div>
+
+  </div>
+ 
+  <button class="btn btn-danger m-5 position-relative" type="button">
+    Button<span class="position-absolute top-0 start-100 translate-middle bg-black border border-0 rounded px-2  badge">+99</span>
+  </button>
+  <button type="button" class="btn btn-primary position-relative m-5">
+  Alerts <span class="position-absolute top-0 start-100 translate-middle  border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
+</button>
+
+
+
+
+<div class="ms-3">
+<p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum reprehenderit ab doloremque qui hic odio, perferendis enim magnam eveniet fuga id corrupti rerum placeat itaque quos provident fugit magni nam!</p>
+
+<button ></button>
+
+</div>
+
+
+
+
+<script src="./assest/js/bootstrap.bundle.min.js"></script>
+<script src="./assest/js/main.js"></script>
 </body>
+
 </html>

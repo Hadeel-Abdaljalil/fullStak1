@@ -1,71 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Z-Index Example</title>
+  <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assest/css/mobile.css" media="(max-width:575px)" /> <!-- for mobile xs-->
+  <link rel="stylesheet" href="./assest/css/tablet.css" media="(min-width:576px) and (max-width:768px)" />
+  <!-- for mobile sm-->
+  <link rel="stylesheet" href="./assest/css/laptop.css" media="(min-width:769px) and (max-width:992px)" />
+  <!-- for tabelt md-->
+  <link rel="stylesheet" href="./assest/css/desktop.css" media="(min-width:993px) and (max-width:1200px)" />
+  <!-- for labtob lg-->
+
+  <link rel="stylesheet" href="./assest/css/z.css" />
+
+
   <style>
-    .container {
-      position: relative;
-      width: 400px;
-      height: 300px;
-      margin: auto;
-      border: 2px solid #333;
+    .cat-image {
+      /* box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.5); ; */
+      filter: drop-shadow(10px 10px 20px rgba(255, 0, 0, 0.5))
     }
 
-    .box {
-      position: relative;
-      width: 200px;
-      height: 150px;
-      color: white;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      border-radius: 8px;
+    .cat-image2 {
+      filter: blur(1px);
+
     }
 
-    .box1 {
-      background: crimson;
-      top: 30px;
-      left: 30px;
-      z-index: 1; /* ورا الكل */
+    .cat-image3 {
+      filter: hue-rotate(45deg);
     }
-
-    .box2 {
-      background: teal;
-      top: 60px;
-      left: 60px;
-      z-index: 3; /* قدام */
-    }
-
-    .box3 {
-      background: orange;
-      top: 90px;
-      left: 90px;
-      z-index: 2; /* بالنص */
-    }
-
-    .note {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 16px;
-    }
-
   </style>
+
 </head>
+
 <body>
 
-  <div class="container">
-    <div class="box box1">Box 1</div>
-    <div class="box box2">Box 2</div>
-    <div class="box box3">Box 3</div>
-  </div>
+  <p style="text-decoration: line-through;">
+    <span class="align-baseline">baseline</span>
+    <span class="align-top">top</span>
+    <span class="align-middle">middle</span>
+    <span class="align-bottom">bottom</span>
+    <span class="align-text-top">text-top</span>
+    <span class="align-text-bottom">text-bottom</span>
+  </p>
 
-    <div class="note">
-        <p>Boxes are positioned using z-index. Box 2 is on top, Box 3 in the middle, and Box 1 at the bottom.</p>
-    </div>
+  <iframe src="./assest/video/v1.mp4" frameborder="0"></iframe>
+
+  <p style="text-decoration: line-through;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, quasi eum odio numquam eveniet itaque adipisci a error</p>
+
+
 
 </body>
+
 </html>

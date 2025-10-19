@@ -3,6 +3,8 @@
      background-size: cover;
      background-repeat: no-repeat;
      height: 100vh;
+     z-index: 2;
+     position: relative;
  }
 
  .arrow-icon  {
@@ -38,9 +40,10 @@
      justify-content: right;
      /* flex-direction: row-reverse ; */
      background-color: aqua;
-     position: fixed;
+     position: absolute;
      right: 0;
      /* row default */
+     
  }
 
  .navbar a {
@@ -60,6 +63,8 @@
      display: flex;
      align-items: end;
      height: 500px;
+     z-index: 2;
+     position: absolute;
  }
 
  .header-icons i {
@@ -75,6 +80,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     
  }
 
  .header-icons i:hover {
@@ -91,15 +97,17 @@
 
 
  .title {
-     /* background-color: rgba(211, 211, 211, 0.5); */
      color: var(--main);
      padding: 5px;
      text-align: center;
-     /* margin-top: 50px; */
-     /* border: 1px solid black; */
-
-
-
+     position: absolute;
+     background-color: blue;
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 1;
 
  }
 
@@ -141,6 +149,7 @@
      background-color: orange;
  }
 
+
  .about {
      display: flex;
      flex-direction: row-reverse;
@@ -155,4 +164,10 @@
  .about-img,
  .about-title {
      text-align: center;
+ }
+
+
+ .bg-danger{
+    background-color: rgb(31, 117, 255) ;
+    
  }
