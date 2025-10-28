@@ -1,60 +1,3 @@
-
-
-//====================================================================================================//    
-// generate options for select dropdown
-var options="";
-for (var i=1; i<=10; i++){
-    options += "<option value='"+i+"'>"+i+"</option>";
-}
-document.getElementById("selectNumber").innerHTML = options;
-
-//====================================================================================//
-// while loop
-var count = 1;
-var whileOutput = "";
-while (count <= 10) {
-    whileOutput += count + " ";
-    count++;
-}
-document.getElementById("whileNumbers").innerHTML = whileOutput;
-//====================================================================================================//    
-// do while loop
-var count2 = 1; 
-var doWhileOutput = "";
-do {
-    doWhileOutput += count2 + " ";
-    count2++;
-} while (count2 <= 10);
-document.getElementById("doWhileNumbers").innerHTML = doWhileOutput;
-
-// the difference between while and do while is that do while executes the loop body at least once
-// even if the condition is false, while loop checks the condition first before executing the loop body.
-
-
-
-//====================================================================================================//
-// break and continue
-var breakOutput = "";
-for (var i = 1; i <= 10; i++) {
-    if (i == 6) {
-        break;
-    }
-    breakOutput += i + " ";
-}   
-document.getElementById("breakNumbers").innerHTML = breakOutput;
-// continue
-var continueOutput = "";
-for (var i = 1; i <= 10; i++) {
-    if (i == 6) {
-        continue;
-    }   
-    continueOutput += i + " ";
-}
-document.getElementById("continueNumbers").innerHTML = continueOutput;
-// the difference between break and continue is that break exits the loop completely,
-//  while continue skips the current iteration and continues with the next iteration.
-
-
 //====================================================================================================//
 // functions
 function greetUser() {
@@ -135,11 +78,6 @@ var currentMinute = currentDate.getMinutes();
 window.console.log("current minute = " + currentMinute);
 var currentSecond = currentDate.getSeconds();
 window.console.log("current second = " + currentSecond);
-//====================================================================================================//
-// hoisting
-window.console.log("value of hoistedVar = " + hoistedVar);
-var hoistedVar = 10;
-window.console.log("value of hoistedVar after declaration = " + hoistedVar);
 //====================================================================================================//
 // strict mode
 "use strict";
